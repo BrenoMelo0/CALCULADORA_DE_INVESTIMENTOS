@@ -50,6 +50,10 @@ header{
   flex-direction: column;
   }
 
+  .content > h2{
+    margin: 50px 0px 0px 50px;
+  }
+
   .input{
     display: flex;
     margin:50px 200px 50px 100px;
@@ -90,8 +94,9 @@ header{
 p{
   display: flex;
   background-color: var();
+  justify-content: center;
+  align-items: center;
   color: var(--preto);
-  margin:0px 0px 50px 103px;
   width: 50vw;
   height: 3vh;
 }

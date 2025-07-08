@@ -1,5 +1,3 @@
-//Preço Teto = R$ 2,00 / 0,06 = R$ 33,33. 
-
 function calcularPrecoTeto() {
     const taxaEsperada = 0.06;
     let dividendYield = document.getElementById("dividendYield").value;
@@ -8,3 +6,11 @@ function calcularPrecoTeto() {
     console.log(precoTeto);
 }
 
+// Ativando a função ao pressionar Enter no input
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("dividendYield").addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            calcularPrecoTeto();
+        }
+    });
+});
