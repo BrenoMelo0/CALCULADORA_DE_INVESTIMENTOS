@@ -1,5 +1,0 @@
-Branco: #f2f814
-Amarelo: #fef0af
-Verde: #7abc5e
-Azul: #016b83
-Preto: #000000

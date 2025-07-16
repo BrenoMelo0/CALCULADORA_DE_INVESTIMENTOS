@@ -1,143 +1,151 @@
+html{
+    background-color:gray;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin:0px;
+    width: 98vw;
+    height: 98vh;
+    flex-direction: column;
+}
 body{
-  background-color: var(--amarelo);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 100%;
-  margin: 20px;
+    background-color: beige;
+    display: flex;
+    box-sizing: border-box;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    margin: 1vh 1vw 1vh 1vw;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
 }
 
-header{
+.headerPadrao{
+    box-sizing: border-box;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    min-height: 10%;
+    box-shadow: 5px 5px 5px 1px black;
+    margin-bottom: 10px;
+}
+
+.headerPadrao img{
+    box-sizing: border-box;
+    padding-right: 20%;
 }
 
 main{
-  display: flex;
+    display: flex;
+    flex-direction: row;
+    margin: 1% 0% 1% 0%;
+    min-height: 90%;
 }
 
-.part1{
-  width: 33%;
+main #entrada{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    min-height: 90%;
 }
 
-.personage{
-  background-color: var(--amarelo);
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  border-radius: 10px;
-  width: 100%;
-  font-size: larger;
-  font-weight: bolder;
+main #entrada h4{
+    margin: 5% 5% 1% 5%;
 }
 
-#nome{
-   background-color: var(--amarelo);
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  border: 5px double black;
-  border-radius: 10px;
-  width: 70%;
-  padding: 5px 0px 0px 20px;
-  font-size: larger;
-  font-weight: bolder;
+main #entrada label{
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    min-height: 5%;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 5px 5px 15px black;
+    margin: 0% 5% 0% 5%;
 }
 
-#nivel{
-   background-color: var(--amarelo);
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  border: 5px double black;
-  border-radius: 10px;
-  width: 20%;
-  padding: 5px 0px 0px 20px;
-  font-size: larger;
-  font-weight: bolder;
+main #entrada input{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: auto;
+    min-height: 90%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 0px;
 }
 
-.padroes{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:center;
+main #entrada button{
+    width: 30%;
+    height: auto;
+    min-height: 98%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 0px;
 }
 
-#valoresPadrao{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 10px;
-}
-#valoresPadrao h3{
-  display: flex;
-  justify-content: center;
-  border: 5px double black;
-  border-radius: 10px;
-  width: 70%;
-  height: 100%;
+main #entrada ul{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 0px;
 }
 
-#valorPadrao{
-  background-color: var(--amarelo);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content:center;
-  border-radius: 100%;
-  border: 5px double black;
-  width: 12%;
-  height: 100%;
-  padding: 5px 0px 15px 10px;
+main #entrada ul li{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0px;
 }
 
-.atributos{
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  border: 0px double black;
+main #entrada ul li input{
+    box-sizing: border-box;
+    display: flex;
+    width: 10%;
+    height: 5%;
+}
+main #entrada ul li p{
+    box-sizing: border-box;
+    display: flex;
+    width: 90%;
+    height: 5%;
 }
 
-.atributo{
-  display: flex;
-  border-radius: 10px;
+main #quadro{
+    color: antiquewhite;
+    background-color: green;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 96%;
+    border: 10px solid rgb(84, 35, 35) ;
+    border-radius: 10px;
+    margin-right: 10px;
 }
 
-#pontos{
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  border: 5px double black;
-  align-items: center;
-  width: 35%;
+main #quadro h4{
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin-bottom: 15px;
 }
 
-#bonus{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 100%;
-  border: 5px double black;
-  justify-content:center;
-  width: 50%;
-  height: 25%;
-}
-
-#pericias{
-  font-size: 100%;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  border-color: black;
-  border-top: 3px;
-  border-top-style: solid;
-  padding: 3px;
-  width: 70%;
-}
-
-#valorPericia{
-  display: inline-block;
-  font-weight: bold;
-  background-color: var(--amarelo);
-  border: 0px;
-  border-bottom: 1px solid #111;
-  padding: 2px 5px 2px 5px;
-  max-width: 40px;
+main #quadro ul{
+    margin: 0px;
 }

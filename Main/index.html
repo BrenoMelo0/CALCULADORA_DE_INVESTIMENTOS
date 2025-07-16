@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="headerPadrao">
+        <img src="assets/images/favicon.ico" alt="">
+        <h1>tarefas</h1>
+    </header>
+    <main>
+        <section id="entrada">
+            <h4>Digite um novo item </h4>
+            <label id="formulario">
+                <input type="text" placeholder="fazer croche......" id="novoItem">
+                    <button onclick="adicionarItem()">Adicionar</button>
+            </label>
+            <div id="legenda">
+                <h4>Legenda</h4>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="desmarcado" checked disabled>
+                        <p>Feito/ concluido</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="desmarcado" disabled>
+                        <p>Em aberto/ nao feito</p> 
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="quadro">
+            <h4>Quadro de itens</h4>
+            <ul id="lista"></ul>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
